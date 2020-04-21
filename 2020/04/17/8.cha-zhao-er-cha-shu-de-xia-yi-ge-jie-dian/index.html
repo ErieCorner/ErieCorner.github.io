@@ -20,17 +20,18 @@
     <meta name="theme-color" content="#60A267">
     
     
-    <meta name="keywords" content="">
-    <meta name="description" content="title: 8. 查找二叉树的下一个节点tags:    - 二叉树date: 2020-04-17categories:    - 算法comments: true 题目描述给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回 。注意，树中的结点不仅包含左右子结点，同时包含指向父结点的指针。 题解二叉树的中序遍历为：先遍历树的左子树，再遍历根节点，最后再遍历右子树。所以最左">
+    <meta name="keywords" content="二叉树">
+    <meta name="description" content="题目描述给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回 。注意，树中的结点不仅包含左右子结点，同时包含指向父结点的指针。 题解二叉树的中序遍历为：先遍历树的左子树，再遍历根节点，最后再遍历右子树。所以最左节点是中序遍历的第一个节点。  如果一个节点的右子树不为空，则该节点的下一个节点是右子树的最左节点； 如果该节点的右子树为空，则不断向上找该节点的父节点的左子树，直到找到第">
 <meta property="og:type" content="article">
 <meta property="og:title" content="8. 查找二叉树的下一个节点">
-<meta property="og:url" content="https://eriecorner.github.io/2020/04/21/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/index.html">
+<meta property="og:url" content="https://eriecorner.github.io/2020/04/17/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/index.html">
 <meta property="og:site_name" content="紫依卓兰">
-<meta property="og:description" content="title: 8. 查找二叉树的下一个节点tags:    - 二叉树date: 2020-04-17categories:    - 算法comments: true 题目描述给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回 。注意，树中的结点不仅包含左右子结点，同时包含指向父结点的指针。 题解二叉树的中序遍历为：先遍历树的左子树，再遍历根节点，最后再遍历右子树。所以最左">
+<meta property="og:description" content="题目描述给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回 。注意，树中的结点不仅包含左右子结点，同时包含指向父结点的指针。 题解二叉树的中序遍历为：先遍历树的左子树，再遍历根节点，最后再遍历右子树。所以最左节点是中序遍历的第一个节点。  如果一个节点的右子树不为空，则该节点的下一个节点是右子树的最左节点； 如果该节点的右子树为空，则不断向上找该节点的父节点的左子树，直到找到第">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-04-21T12:17:42.724Z">
-<meta property="article:modified_time" content="2020-04-21T12:32:57.785Z">
+<meta property="article:published_time" content="2020-04-16T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-04-21T12:44:05.123Z">
 <meta property="article:author" content="紫依卓兰">
+<meta property="article:tag" content="二叉树">
 <meta name="twitter:card" content="summary">
     
         <link rel="alternate" type="application/atom+xml" title="紫依卓兰" href="/atom.xml">
@@ -137,10 +138,12 @@
         <h1 class="title">8. 查找二叉树的下一个节点</h1>
         <h5 class="subtitle">
             
-                <time datetime="2020-04-21T12:17:42.724Z" itemprop="datePublished" class="page-time">
-  2020-04-21
+                <time datetime="2020-04-16T16:00:00.000Z" itemprop="datePublished" class="page-time">
+  2020-04-17
 </time>
 
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li></ul>
 
             
         </h5>
@@ -168,9 +171,11 @@
     <div class="post-card">
         <h1 class="post-card-title">8. 查找二叉树的下一个节点</h1>
         <div class="post-meta">
-            <time class="post-time" title="2020-04-21 20:17:42" datetime="2020-04-21T12:17:42.724Z"  itemprop="datePublished">2020-04-21</time>
+            <time class="post-time" title="2020-04-17 00:00:00" datetime="2020-04-16T16:00:00.000Z"  itemprop="datePublished">2020-04-17</time>
 
             
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li></ul>
+
 
 
             
@@ -181,9 +186,7 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <hr>
-<p>title: 8. 查找二叉树的下一个节点<br>tags:<br>    - 二叉树<br>date: 2020-04-17<br>categories:<br>    - 算法<br>comments: true</p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回 。注意，树中的结点不仅包含左右子结点，同时包含指向父结点的指针。</p>
+            <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回 。注意，树中的结点不仅包含左右子结点，同时包含指向父结点的指针。</p>
 <h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>二叉树的中序遍历为：先遍历树的左子树，再遍历根节点，最后再遍历右子树。所以最左节点是中序遍历的第一个节点。</p>
 <ul>
 <li>如果一个节点的右子树不为空，则该节点的下一个节点是右子树的最左节点；</li>
@@ -204,7 +207,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-04-21T12:32:57.785Z" itemprop="dateUpdated">2020-04-21 20:32:57</time>
+    最后更新时间：<time datetime="2020-04-21T12:44:05.123Z" itemprop="dateUpdated">2020-04-21 20:44:05</time>
 </span><br>
 
 
@@ -226,6 +229,8 @@
 
         <div class="post-footer">
             
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" rel="tag">二叉树</a></li></ul>
+
 
             
 <div class="page-share-wrap">
@@ -234,7 +239,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/04/21/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/&title=《8. 查找二叉树的下一个节点》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/04/17/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/&title=《8. 查找二叉树的下一个节点》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -244,22 +249,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/04/21/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/&title=《8. 查找二叉树的下一个节点》 — 紫依卓兰&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/04/17/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/&title=《8. 查找二叉树的下一个节点》 — 紫依卓兰&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/04/21/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/04/17/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《8. 查找二叉树的下一个节点》 — 紫依卓兰&url=https://eriecorner.github.io/2020/04/21/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/&via=https://eriecorner.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《8. 查找二叉树的下一个节点》 — 紫依卓兰&url=https://eriecorner.github.io/2020/04/17/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/&via=https://eriecorner.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/04/21/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/04/17/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -282,18 +287,18 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2020/04/21/2.xuan-zhuan-shu-zu-zhong-de-zui-xiao-yuan-su/" id="post-prev" class="post-nav-link">
+      <a href="/2020/04/17/7.chong-jian-er-cha-shu/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">2. 旋转数组中的最小元素</h4>
+        <h4 class="title">6. 重建二叉树</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2020/04/21/7.chong-jian-er-cha-shu/" id="post-next" class="post-nav-link">
+      <a href="/2020/04/16/5.ti-huan-kong-ge/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">7. 重建二叉树</h4>
+        <h4 class="title">5. 替换空格</h4>
       </a>
     </div>
   
@@ -391,7 +396,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/04/21/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/&title=《8. 查找二叉树的下一个节点》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/04/17/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/&title=《8. 查找二叉树的下一个节点》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -401,22 +406,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/04/21/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/&title=《8. 查找二叉树的下一个节点》 — 紫依卓兰&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/04/17/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/&title=《8. 查找二叉树的下一个节点》 — 紫依卓兰&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/04/21/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/04/17/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《8. 查找二叉树的下一个节点》 — 紫依卓兰&url=https://eriecorner.github.io/2020/04/21/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/&via=https://eriecorner.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《8. 查找二叉树的下一个节点》 — 紫依卓兰&url=https://eriecorner.github.io/2020/04/17/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/&via=https://eriecorner.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/04/21/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/04/17/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -427,7 +432,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACt0lEQVR42u3aUU7EMAwFQO5/aTjA0vbZjpdFmn6tYJVkipSEZ399xc/3y3P189fvJCO/fk5+e+zBw8PDGy/9njFZaPLk40cj4OHh4a3xqsu9n+bqO/cLvX+V+Xrw8PDwPo2XLK76UnpXeTw8PLz/xbtfXM5OLsp/cDDg4eHhBbze0Hm8m1yge9fuY1kLHh4e3rQy1bxev+fzSn0PDw8Pb1xV3yhNJVFvb7RfRsDDw8Nb4OUbbj5x7xKch7nVdeLh4eGd5SUb9GTT70W91fEvP+Ph4eEt8A60NAXf2QsdCgEuHh4e3iFe9SK7sfTqLMf+V8DDw8Mb8JIpJ9Wl3hFSPX4KGQYeHh7eAq/X2NQLeatHQqH1Cg8PD2+B1xtoXiSbz1U+KvDw8PAO8ZKSUvVISGLW6nbfDHPx8PDwlnm9ElRyJOQlqzwWSf4keHh4eBu8XpibNxn0Rs4LZtFrwsPDw1vg5ZfgvGG0upT8cl+tc+Hh4eGd5fW25uqltneQ5PHEQxiBh4eH90ZeNSzotReUw9lq1oKHh4f3Fl5+ka3Gr9WL+6iRCw8PD2+Zl4ehyTS963J+iS80XeHh4eEt8PInT4XzDX1yVDy8IDw8PLwFXq9lalIqqx4n1Wj44XjAw8PDO8TLt/Vq/Fptcq2+9GoIgoeHh3eKlxfpe0WyfHOvvrjRMYCHh4d3iNdrk0p+Um0UqIYXl7Pg4eHhrfF6W3MSQEzi3QMPHh4e3lFerwCWHw+9qDdvQXj4LR4eHt4C79ThUQ0veoWxUdELDw8P7ygv38qr8Wse9VbnKhwMeHh4eGu8pDA2X/RGAPGwEjw8PLwP4CUX2XkJrdegEOnx8PDw3s7rNQf0AoU8XL6cHQ8PD2+N1ytZ9bb+s+0L5aYrPDw8vDFvci9Nili9olo1+DhQ38PDw8N7Hv8HoL+xhuNU/x8AAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtElEQVR42u3aMXIjMQwEQP//0770qlxazwCkrKAZqbwSl82AoAF8fcXj+7/x/PdX33ye+efn5OmxgYeHh7dY+s/x/J3ZRiRvTDYimgEPDw/vGi8/slv2q81qQ0sSJPDw8PA+k/d83Ocz58HgeYPw8PDwPp+3TzTMwgweHh7ep/FmU28A+dGfJ0fw8PDw3sO7d8Tf+3ylvoeHh4e3rqrn5a59oastvEXz4+Hh4V3g5QfurJmgXWjb8hV9Ew8PD+8oL19QstxkhtmWDVMkeHh4eNd4bWG+fXov6VDnp/Hw8PCO8toE7qm2g2RzV/8r4OHh4b2Fly86T8jmKeC2INeI8fDw8M7w2qaBTbGqvcpvUsN4eHh4N3jtuTpL+25KZbO2sOEP8PDw8ALeLC3bvrINAO0R/0u7FR4eHt413iZd+xwS8lRFkuRN0sR16wAeHh5ezMuXMmsFmM2cF8yibcLDw8O7xmsP9LNLOdv2eqBqh4eHh/fi6X7SPLnQXs1nYeaXiIeHh4e35p3qU8pfk1DbtEVRPMPDw8Nb82YtTXmTwSb5u3+Kh4eH91e8lt2mJJIZ8kBSdI3h4eHhLXjJ2ISKfTK3Lae97IzAw8PDW/OeH+fHd5KSmIWT2dujMhgeHh7egpckbWdFrHbm2aYXXRJ4eHh4h3izIlZSmjrVAdVudHG7x8PDw1vzkoO7Leq3S58lL16+BQ8PD+8ab3MVzlMDs6TwauDh4eEd5X2XY3ZfjRqk4q0pwhUeHh7eBd4+eMzSu7PC2LGiFx4eHt6al7dbtaTkYt0y6sCAh4eHd42XLzEvfSUBYB+1flkJHh4e3gfz8sDwnA7OC2BDPR4eHt7beW35an81by/9eHh4eO/h5cnW9pKdb0HbnhX9Fg8PD+8Cr72X5kmHWVHtGXOspoeHh4c34f0D4xtK31WJp+kAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 
