@@ -14,24 +14,24 @@
     
     
     
-    <title>1.2 矩形覆盖问题 | 紫依卓兰</title>
+    <title>4 二维数组中查找目标值 | 紫依卓兰</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#60A267">
     
     
-    <meta name="keywords" content="斐波那契">
-    <meta name="description" content="题目描述：我们可以用 2*1 的小矩形横着或者竖着去覆盖更大的矩形。请问用 n 个 2*1 的小矩形无重叠地覆盖一个 2*n 的大矩形，总共有多少种方法？ 题解：f(1) &#x3D; 1; f(2) &#x3D; 2; n&gt;2则f(n) &#x3D; f(n-1)+f(n-2) 代码实现：123456789101112public int coverRect(int n) &amp;#123;        if (n &amp;lt">
+    <meta name="keywords" content="数组">
+    <meta name="description" content="题目描述给定一个二维数组int num[M][N]，其每一行从左到右递增排序，从上到下也是递增排序。给定一个数，判断这个数是否在该二维数组中。 题解：该二维数组中的一个数，小于它的数一定在其左边，大于它的数一定在其下边。因此，从右上角开始查找，就可以根据 target 和当前元素的大小关系来缩小查找区间，当前元素的查找区间为左下角的所有元素。 代码实现：时间复杂度O(MN) ，空间复杂度O(1)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1.2 矩形覆盖问题">
-<meta property="og:url" content="https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/index.html">
+<meta property="og:title" content="4 二维数组中查找目标值">
+<meta property="og:url" content="https://eriecorner.github.io/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/index.html">
 <meta property="og:site_name" content="紫依卓兰">
-<meta property="og:description" content="题目描述：我们可以用 2*1 的小矩形横着或者竖着去覆盖更大的矩形。请问用 n 个 2*1 的小矩形无重叠地覆盖一个 2*n 的大矩形，总共有多少种方法？ 题解：f(1) &#x3D; 1; f(2) &#x3D; 2; n&gt;2则f(n) &#x3D; f(n-1)+f(n-2) 代码实现：123456789101112public int coverRect(int n) &amp;#123;        if (n &amp;lt">
+<meta property="og:description" content="题目描述给定一个二维数组int num[M][N]，其每一行从左到右递增排序，从上到下也是递增排序。给定一个数，判断这个数是否在该二维数组中。 题解：该二维数组中的一个数，小于它的数一定在其左边，大于它的数一定在其下边。因此，从右上角开始查找，就可以根据 target 和当前元素的大小关系来缩小查找区间，当前元素的查找区间为左下角的所有元素。 代码实现：时间复杂度O(MN) ，空间复杂度O(1)">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-04-13T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-04-21T12:36:14.433Z">
+<meta property="article:published_time" content="2020-04-14T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-04-21T12:32:03.184Z">
 <meta property="article:author" content="紫依卓兰">
-<meta property="article:tag" content="斐波那契">
+<meta property="article:tag" content="数组">
 <meta name="twitter:card" content="summary">
     
         <link rel="alternate" type="application/atom+xml" title="紫依卓兰" href="/atom.xml">
@@ -113,7 +113,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">1.2 矩形覆盖问题</div>
+        <div class="flex-col header-title ellipsis">4 二维数组中查找目标值</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -135,11 +135,11 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">1.2 矩形覆盖问题</h1>
+        <h1 class="title">4 二维数组中查找目标值</h1>
         <h5 class="subtitle">
             
-                <time datetime="2020-04-13T16:00:00.000Z" itemprop="datePublished" class="page-time">
-  2020-04-14
+                <time datetime="2020-04-14T16:00:00.000Z" itemprop="datePublished" class="page-time">
+  2020-04-15
 </time>
 
 
@@ -160,18 +160,18 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题目描述："><span class="post-toc-number">1.</span> <span class="post-toc-text">题目描述：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题解："><span class="post-toc-number">2.</span> <span class="post-toc-text">题解：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码实现："><span class="post-toc-number">3.</span> <span class="post-toc-text">代码实现：</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题目描述"><span class="post-toc-number">1.</span> <span class="post-toc-text">题目描述</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题解："><span class="post-toc-number">2.</span> <span class="post-toc-text">题解：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码实现："><span class="post-toc-number">3.</span> <span class="post-toc-text">代码实现：</span></a></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-1.2 矩形覆盖问题"
+<article id="post-4.  二维数组中查找目标值"
   class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">1.2 矩形覆盖问题</h1>
+        <h1 class="post-card-title">4 二维数组中查找目标值</h1>
         <div class="post-meta">
-            <time class="post-time" title="2020-04-14 00:00:00" datetime="2020-04-13T16:00:00.000Z"  itemprop="datePublished">2020-04-14</time>
+            <time class="post-time" title="2020-04-15 00:00:00" datetime="2020-04-14T16:00:00.000Z"  itemprop="datePublished">2020-04-15</time>
 
             
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li></ul>
@@ -186,10 +186,10 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h2 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h2><p>我们可以用 2*1 的小矩形横着或者竖着去覆盖更大的矩形。请问用 n 个 2*1 的小矩形无重叠地覆盖一个 2*n 的大矩形，总共有多少种方法？</p>
-<h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><p>f(1) = 1; f(2) = 2; n&gt;2则f(n) = f(n-1)+f(n-2)</p>
-<h2 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public int coverRect(int n) &#123;</span><br><span class="line">        if (n &lt;&#x3D; 2) &#123;</span><br><span class="line">            return n;</span><br><span class="line">        &#125;</span><br><span class="line">        int preOne &#x3D; 2, preTwo &#x3D; 1, result &#x3D; 0;</span><br><span class="line">        for (int i &#x3D; 3; i &lt;&#x3D; n; i++) &#123;</span><br><span class="line">            result &#x3D; preOne + preTwo;</span><br><span class="line">            preTwo &#x3D; preOne;</span><br><span class="line">            preOne &#x3D; result;</span><br><span class="line">        &#125;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
+            <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个二维数组int num[M][N]，其每一行从左到右递增排序，从上到下也是递增排序。给定一个数，判断这个数是否在该二维数组中。</p>
+<h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><p>该二维数组中的一个数，小于它的数一定在其左边，大于它的数一定在其下边。因此，从右上角开始查找，就可以根据 target 和当前元素的大小关系来缩小查找区间，当前元素的查找区间为左下角的所有元素。</p>
+<h2 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h2><p>时间复杂度O(MN) ，空间复杂度O(1)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public boolean find(int target, int[][] nums) &#123;</span><br><span class="line">       if (nums &#x3D;&#x3D; null || nums.length &#x3D;&#x3D; 0 || nums[0].length &#x3D;&#x3D; 0) &#123;</span><br><span class="line">           return false;</span><br><span class="line">       &#125;</span><br><span class="line">       int r &#x3D; 0, c &#x3D; nums[0].length - 1;</span><br><span class="line">       while (r &lt; nums.length - 1 &amp;&amp; c &gt;&#x3D; 0) &#123;</span><br><span class="line">           if (target &#x3D;&#x3D; nums[r][c]) &#123;</span><br><span class="line">               return true;</span><br><span class="line">           &#125;else if (target&gt;nums[r][c])&#123;</span><br><span class="line">               r++;</span><br><span class="line">           &#125;else &#123;</span><br><span class="line">               c--;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       return false;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
         </div>
 
         <blockquote class="post-copyright">
@@ -197,7 +197,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-04-21T12:36:14.433Z" itemprop="dateUpdated">2020-04-21 20:36:14</time>
+    最后更新时间：<time datetime="2020-04-21T12:32:03.184Z" itemprop="dateUpdated">2020-04-21 20:32:03</time>
 </span><br>
 
 
@@ -219,7 +219,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91/" rel="tag">斐波那契</a></li></ul>
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E7%BB%84/" rel="tag">数组</a></li></ul>
 
 
             
@@ -229,7 +229,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/&title=《1.2 矩形覆盖问题》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/&title=《4 二维数组中查找目标值》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -239,22 +239,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/&title=《1.2 矩形覆盖问题》 — 紫依卓兰&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/&title=《4 二维数组中查找目标值》 — 紫依卓兰&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《1.2 矩形覆盖问题》 — 紫依卓兰&url=https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/&via=https://eriecorner.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《4 二维数组中查找目标值》 — 紫依卓兰&url=https://eriecorner.github.io/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/&via=https://eriecorner.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -277,18 +277,18 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/" id="post-prev" class="post-nav-link">
+      <a href="/2020/04/15/3.shu-zu-zhong-chong-fu-de-shu-zi/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">4 二维数组中查找目标值</h4>
+        <h4 class="title">3. 数组中重复的数字</h4>
       </a>
     </div>
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2020/04/14/1.3-tiao-tai-jie-wen-ti/" id="post-next" class="post-nav-link">
+      <a href="/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">1.3 跳台阶问题</h4>
+        <h4 class="title">1.2 矩形覆盖问题</h4>
       </a>
     </div>
   
@@ -386,7 +386,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/&title=《1.2 矩形覆盖问题》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/&title=《4 二维数组中查找目标值》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -396,22 +396,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/&title=《1.2 矩形覆盖问题》 — 紫依卓兰&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/&title=《4 二维数组中查找目标值》 — 紫依卓兰&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《1.2 矩形覆盖问题》 — 紫依卓兰&url=https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/&via=https://eriecorner.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《4 二维数组中查找目标值》 — 紫依卓兰&url=https://eriecorner.github.io/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/&via=https://eriecorner.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -422,7 +422,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACq0lEQVR42u3ay27DQAgF0Pz/T7dS17VzgcFppeNVZPl1ZjEQ4PWKj6+fIz+TX391XF352jjw8PDwWp9+/5r7198/5x6fsK/uSpYGDw8Pb493Hwyq+GQJknflgefyPB4eHt5HeVevn2/iVRIeHh7ef+dVE+X8zJ8IDHh4eHiDYkReesgLwb00faXWgoeHhxfzqg2wv/B7sb+Hh4eHN+iqVzfcpPGfh5xqUeOX5+Ph4eEt8PJWfVJWyMsQyXtPLS4eHh7eWV61zd8burrf+qtnCvfi4eHhLfDywJAPCvSS42rBN1lcPDw8vA3epNFVbTjl7bF5oMLDw8Pb5uXl1FPJdPU5vSXDw8PD2+ZVG06nCrLVQYHCN+Dh4eEt85Itu7f35otVJb25Eg8PD2+BN/msvMDa29wnoQUPDw/vSd6p8alTJYlqWLo8j4eHh3eUd3Yj7o1qVcNJnsrj4eHhPc+rNsN6W3lvYCv6Njw8PLwFXm9cIG999RauV+Z4s4h4eHh4Y16vsZSPDvSGpXrDXpf9PTw8PLwFXoKpFmrzwYKkXNsrIuPh4eFt8PK200ZiPQGUAw8eHh7eUV61IJufSQJJoZXVStDx8PDwNnhn09n5vadSdjw8PLw9XnVbrxYsqoMFvYWOJiPw8PDwxrxqsjsv1OZjBL3lwMPDw3uSV/243raeL1CeZL/5l4CHh4d3lFc98kQ5CQl5+j5ZLDw8PLyzvMlYVbJN58+pBqroLjw8PLwF3tl4khdY8wCQDIHh4eHhPc/rtbvyrXwyTJB8Q+F/AB4eHt5RXr4pT5apV6o4UJLAw8PD+xBvEiomi1gdHWgGBjw8PLxlXvWDqux5Uo6Hh4e3zcsLAdWCQnUr7xUpmgMEeHh4eC1e9e99niJX21r5wEEeWvDw8PCO8r4BaGzkKSFpuy4AAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACuElEQVR42u3aQY4bMQwEwP3/p5PrLgI73aQ0cYCak2GPxyodRJrk11d8/fp2fX/n/Z2v7vnz/levk188cOHh4eEtlv5qce/fT3j5M/PNfb9mPDw8vNu8/MhOvptsX7JBs7CEh4eH92m8fIk5uL0TDw8P7//lJbBZgp58ioeHh/dvefvENwkSs5LEQ7UWPDw8vJiXd5E+5/WV/h4eHh7euquet7LylDo/4mcr/PEEPDw8vAu8TRNrPyjQblm7Tjw8PLwbvPcFhfYP/+z9fAuS0saPe/Dw8PAe5539vz8LMLM0va404+Hh4cW8/UBVO3aQDCIUR3/SQsPDw8O7wDu7rDYhzscO2i3Gw8PDu8E7tcQ8mW6HAza/joeHh3ePVyemQYEgT3zzX1x19vDw8PAO8WZt+1ONrgPFhaSki4eHh3eN19Yw2sCwDz+zpBwPDw/vLC9JcGelh1nIaZPvvxQ+8PDw8K7x2jT3bDBIyr6zVB4PDw/vBm+GzA/3zZBWshFJcMLDw8O7wUuKoUly3Da09uFk2AbDw8PDW/DyIaccnxzT7XPyT18WI/Dw8PAu8PIvz4oI7fPzxlvR2cPDw8M7ystHmmbtqE0xNxliwMPDw3uGl5cGZuXU/djBbPwLDw8P7xlemy7njPa7m3uKIIGHh4e34LXHer6UfDyrTe7z38XDw8N7htcezW3yfWr4INk4PDw8vHu8/WGdLDEPNrMr6vLh4eHhLXizgmybZG8KDclWvvwUDw8P7wJv1jOaJc3tc/KgtQ8neHh4eC0vL+MWJYC3WXw+KJAXbQ80wPDw8PBK3mwMa1OcPRCvku3Dw8PD+xheW3qYjQIk5eC+cI2Hh4f3NK9Nndt0Oa8kFENXeHh4eBd4STFiVmxtW1P7YgQeHh7ebV6bl7ZDA3lnanaqH7jw8PDw0uf/BveWiL36EYAOAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
 
