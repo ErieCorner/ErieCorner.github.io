@@ -81,15 +81,15 @@
     <link href="https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/"/>
     <id>https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/</id>
     <published>2020-04-13T16:00:00.000Z</published>
-    <updated>2020-04-21T03:50:47.683Z</updated>
+    <updated>2020-04-21T10:03:04.262Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h2><p>我们可以用 2<em>1 的小矩形横着或者竖着去覆盖更大的矩形。请问用 n 个 2</em>1 的小矩形无重叠地覆盖一个 2*n 的大矩形，总共有多少种方法？</p><h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><p>f(1) = 1; f(2) = 2; n&gt;2则f(n) = f(n-1)+f(n-2)</p><h2 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public int coverRect(int n) &#123;</span><br><span class="line">        if (n &lt;&#x3D; 2) &#123;</span><br><span class="line">            return n;</span><br><span class="line">        &#125;</span><br><span class="line">        int preOne &#x3D; 2, preTwo &#x3D; 1, result &#x3D; 0;</span><br><span class="line">        for (int i &#x3D; 3; i &lt;&#x3D; n; i++) &#123;</span><br><span class="line">            result &#x3D; preOne + preTwo;</span><br><span class="line">            preTwo &#x3D; preOne;</span><br><span class="line">            preOne &#x3D; result;</span><br><span class="line">        &#125;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h2><p>我们可以用 2*1 的小矩形横着或者竖着去覆盖更大的矩形。请问用 n 个 2*1 的小矩形无重叠地覆盖一个 2*n 的大矩形，总共有多少种方法？</p><h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><p>f(1) = 1; f(2) = 2; n&gt;2则f(n) = f(n-1)+f(n-2)</p><h2 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public int coverRect(int n) &#123;</span><br><span class="line">        if (n &lt;&#x3D; 2) &#123;</span><br><span class="line">            return n;</span><br><span class="line">        &#125;</span><br><span class="line">        int preOne &#x3D; 2, preTwo &#x3D; 1, result &#x3D; 0;</span><br><span class="line">        for (int i &#x3D; 3; i &lt;&#x3D; n; i++) &#123;</span><br><span class="line">            result &#x3D; preOne + preTwo;</span><br><span class="line">            preTwo &#x3D; preOne;</span><br><span class="line">            preOne &#x3D; result;</span><br><span class="line">        &#125;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;题目描述：&quot;&gt;&lt;a href=&quot;#题目描述：&quot; class=&quot;headerlink&quot; title=&quot;题目描述：&quot;&gt;&lt;/a&gt;题目描述：&lt;/h2&gt;&lt;p&gt;我们可以用 2&lt;em&gt;1 的小矩形横着或者竖着去覆盖更大的矩形。请问用 n 个 2&lt;/em&gt;1 的小矩形无重叠地覆盖
+        &lt;h2 id=&quot;题目描述：&quot;&gt;&lt;a href=&quot;#题目描述：&quot; class=&quot;headerlink&quot; title=&quot;题目描述：&quot;&gt;&lt;/a&gt;题目描述：&lt;/h2&gt;&lt;p&gt;我们可以用 2*1 的小矩形横着或者竖着去覆盖更大的矩形。请问用 n 个 2*1 的小矩形无重叠地覆盖一个 2*n 
       
     
     </summary>
@@ -101,36 +101,6 @@
     
     
       <category term="算法" scheme="https://eriecorner.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World11111</title>
-    <link href="https://eriecorner.github.io/2020/01/01/hello-world/"/>
-    <id>https://eriecorner.github.io/2020/01/01/hello-world/</id>
-    <published>2019-12-31T16:00:00.000Z</published>
-    <updated>2020-04-20T13:04:53.653Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
-      <category term="Android" scheme="https://eriecorner.github.io/categories/Android/"/>
-    
-      <category term="View" scheme="https://eriecorner.github.io/categories/Android/View/"/>
-    
-    
-      <category term="hexo" scheme="https://eriecorner.github.io/tags/hexo/"/>
-    
-      <category term="hello" scheme="https://eriecorner.github.io/tags/hello/"/>
     
   </entry>
   
