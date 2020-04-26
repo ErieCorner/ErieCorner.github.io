@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eriecorner.github.io/"/>
-  <updated>2020-04-25T13:04:19.803Z</updated>
+  <updated>2020-04-26T14:29:06.455Z</updated>
   <id>https://eriecorner.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>14.数值的整数次方</title>
+    <link href="https://eriecorner.github.io/2020/04/26/14.shu-zhi-de-zheng-shu-ci-fang/"/>
+    <id>https://eriecorner.github.io/2020/04/26/14.shu-zhi-de-zheng-shu-ci-fang/</id>
+    <published>2020-04-26T14:27:25.747Z</published>
+    <updated>2020-04-26T14:29:06.455Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><ul><li>题目来源： <a href="https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c00?tpId=13&tqId=11165&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking&from=cyc_github" target="_blank" rel="noopener">Nowcoder</a></li><li>题设：给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。（保证base和exponent不同时为0 ）</li></ul><h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><ul><li>负数的幂次方等于其绝对值的幂次方的倒数</li></ul><h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><h4 id="JAVA实现"><a href="#JAVA实现" class="headerlink" title="JAVA实现"></a>JAVA实现</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public double power(double base, int exponent) &#123;</span><br><span class="line">        double result &#x3D; 1;</span><br><span class="line">        if (base &#x3D;&#x3D; 0) &#123;</span><br><span class="line">            return 0.0;</span><br><span class="line">        &#125;</span><br><span class="line">        if (exponent &#x3D;&#x3D; 0) &#123;</span><br><span class="line">            return 1.0;</span><br><span class="line">        &#125;</span><br><span class="line">        int t &#x3D; Math.abs(exponent);</span><br><span class="line">       while (t&gt;&#x3D;1)&#123;</span><br><span class="line">           result *&#x3D; base;</span><br><span class="line">           t--;</span><br><span class="line">       &#125;</span><br><span class="line">       if (exponent&gt;0)&#123;</span><br><span class="line">           return result;</span><br><span class="line">       &#125;else &#123;</span><br><span class="line">           return 1.0&#x2F;result;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h4 id="kotlin实现"><a href="#kotlin实现" class="headerlink" title="kotlin实现"></a>kotlin实现</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">fun power(base: Double, exponent: Int): Double &#123;</span><br><span class="line">       var result &#x3D; 1.0</span><br><span class="line">       if (base &#x3D;&#x3D; 0.0) &#123;</span><br><span class="line">           return 0.0</span><br><span class="line">       &#125;</span><br><span class="line">       if (exponent &#x3D;&#x3D; 0) &#123;</span><br><span class="line">           return 1.0</span><br><span class="line">       &#125;</span><br><span class="line">       var t &#x3D; abs(exponent)</span><br><span class="line">       while (t &gt;&#x3D; 1) &#123;</span><br><span class="line">           result *&#x3D; base</span><br><span class="line">           t--</span><br><span class="line">       &#125;</span><br><span class="line">       return if (exponent &gt; 0) &#123;</span><br><span class="line">           result</span><br><span class="line">       &#125; else &#123;</span><br><span class="line">           1.0 &#x2F; result</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;题目来源： &lt;a href=&quot;https://www.nowcoder.com/practice/1a834e5
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://eriecorner.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>13.二进制中1的个数</title>
