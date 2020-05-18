@@ -18,8 +18,8 @@
   
   <entry>
     <title>OkHttp源码解析（Oktlin版）</title>
-    <link href="https://eriecorner.github.io/2020/05/17/okhttp-kotlin-ban-yuan-ma-jie-xi/"/>
-    <id>https://eriecorner.github.io/2020/05/17/okhttp-kotlin-ban-yuan-ma-jie-xi/</id>
+    <link href="https://eriecorner.github.io/2020/05/17/san-fang-kuang-jia-yuan-ma-jie-xi/okhttp-kotlin-ban-yuan-ma-jie-xi/"/>
+    <id>https://eriecorner.github.io/2020/05/17/san-fang-kuang-jia-yuan-ma-jie-xi/okhttp-kotlin-ban-yuan-ma-jie-xi/</id>
     <published>2020-05-17T13:34:27.475Z</published>
     <updated>2020-05-17T13:38:41.963Z</updated>
     
@@ -44,8 +44,8 @@
   
   <entry>
     <title>14.数值的整数次方</title>
-    <link href="https://eriecorner.github.io/2020/04/26/14.shu-zhi-de-zheng-shu-ci-fang/"/>
-    <id>https://eriecorner.github.io/2020/04/26/14.shu-zhi-de-zheng-shu-ci-fang/</id>
+    <link href="https://eriecorner.github.io/2020/04/26/suan-fa/14.shu-zhi-de-zheng-shu-ci-fang/"/>
+    <id>https://eriecorner.github.io/2020/04/26/suan-fa/14.shu-zhi-de-zheng-shu-ci-fang/</id>
     <published>2020-04-26T14:27:25.747Z</published>
     <updated>2020-04-26T14:29:06.455Z</updated>
     
@@ -69,8 +69,8 @@
   
   <entry>
     <title>13.二进制中1的个数</title>
-    <link href="https://eriecorner.github.io/2020/04/25/13.er-jin-zhi-zhong-1-de-ge-shu/"/>
-    <id>https://eriecorner.github.io/2020/04/25/13.er-jin-zhi-zhong-1-de-ge-shu/</id>
+    <link href="https://eriecorner.github.io/2020/04/25/suan-fa/13.er-jin-zhi-zhong-1-de-ge-shu/"/>
+    <id>https://eriecorner.github.io/2020/04/25/suan-fa/13.er-jin-zhi-zhong-1-de-ge-shu/</id>
     <published>2020-04-24T16:00:00.000Z</published>
     <updated>2020-04-25T13:04:19.803Z</updated>
     
@@ -96,8 +96,8 @@
   
   <entry>
     <title>12. 剪绳子</title>
-    <link href="https://eriecorner.github.io/2020/04/24/12.jian-sheng-zi/"/>
-    <id>https://eriecorner.github.io/2020/04/24/12.jian-sheng-zi/</id>
+    <link href="https://eriecorner.github.io/2020/04/24/suan-fa/12.jian-sheng-zi/"/>
+    <id>https://eriecorner.github.io/2020/04/24/suan-fa/12.jian-sheng-zi/</id>
     <published>2020-04-23T16:00:00.000Z</published>
     <updated>2020-04-24T09:39:40.195Z</updated>
     
@@ -121,8 +121,8 @@
   
   <entry>
     <title>11.机器人的运动范围</title>
-    <link href="https://eriecorner.github.io/2020/04/23/11.ji-qi-ren-de-yun-dong-fan-wei/"/>
-    <id>https://eriecorner.github.io/2020/04/23/11.ji-qi-ren-de-yun-dong-fan-wei/</id>
+    <link href="https://eriecorner.github.io/2020/04/23/suan-fa/11.ji-qi-ren-de-yun-dong-fan-wei/"/>
+    <id>https://eriecorner.github.io/2020/04/23/suan-fa/11.ji-qi-ren-de-yun-dong-fan-wei/</id>
     <published>2020-04-22T16:00:00.000Z</published>
     <updated>2020-04-24T09:40:36.437Z</updated>
     
@@ -147,8 +147,8 @@
   
   <entry>
     <title>10. 矩阵中的路径</title>
-    <link href="https://eriecorner.github.io/2020/04/22/10.ju-zhen-zhong-de-lu-jing/"/>
-    <id>https://eriecorner.github.io/2020/04/22/10.ju-zhen-zhong-de-lu-jing/</id>
+    <link href="https://eriecorner.github.io/2020/04/22/suan-fa/10.ju-zhen-zhong-de-lu-jing/"/>
+    <id>https://eriecorner.github.io/2020/04/22/suan-fa/10.ju-zhen-zhong-de-lu-jing/</id>
     <published>2020-04-21T16:00:00.000Z</published>
     <updated>2020-04-24T09:40:10.629Z</updated>
     
@@ -174,8 +174,8 @@
   
   <entry>
     <title>9. 两个栈实现一个队列</title>
-    <link href="https://eriecorner.github.io/2020/04/18/9.liang-ge-zhan-shi-xian-yi-ge-dui-lie/"/>
-    <id>https://eriecorner.github.io/2020/04/18/9.liang-ge-zhan-shi-xian-yi-ge-dui-lie/</id>
+    <link href="https://eriecorner.github.io/2020/04/18/suan-fa/9.liang-ge-zhan-shi-xian-yi-ge-dui-lie/"/>
+    <id>https://eriecorner.github.io/2020/04/18/suan-fa/9.liang-ge-zhan-shi-xian-yi-ge-dui-lie/</id>
     <published>2020-04-17T16:00:00.000Z</published>
     <updated>2020-04-21T12:33:05.298Z</updated>
     
@@ -203,8 +203,8 @@
   
   <entry>
     <title>7. 重建二叉树</title>
-    <link href="https://eriecorner.github.io/2020/04/17/7.chong-jian-er-cha-shu/"/>
-    <id>https://eriecorner.github.io/2020/04/17/7.chong-jian-er-cha-shu/</id>
+    <link href="https://eriecorner.github.io/2020/04/17/suan-fa/7.chong-jian-er-cha-shu/"/>
+    <id>https://eriecorner.github.io/2020/04/17/suan-fa/7.chong-jian-er-cha-shu/</id>
     <published>2020-04-16T16:00:00.000Z</published>
     <updated>2020-04-21T12:46:25.927Z</updated>
     
@@ -230,8 +230,8 @@
   
   <entry>
     <title>8. 查找二叉树的下一个节点</title>
-    <link href="https://eriecorner.github.io/2020/04/17/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/"/>
-    <id>https://eriecorner.github.io/2020/04/17/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/</id>
+    <link href="https://eriecorner.github.io/2020/04/17/suan-fa/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/"/>
+    <id>https://eriecorner.github.io/2020/04/17/suan-fa/8.cha-zhao-er-cha-shu-de-xia-yi-ge-jie-dian/</id>
     <published>2020-04-16T16:00:00.000Z</published>
     <updated>2020-04-21T12:44:05.123Z</updated>
     
@@ -256,8 +256,8 @@
   
   <entry>
     <title>5. 替换空格</title>
-    <link href="https://eriecorner.github.io/2020/04/16/5.ti-huan-kong-ge/"/>
-    <id>https://eriecorner.github.io/2020/04/16/5.ti-huan-kong-ge/</id>
+    <link href="https://eriecorner.github.io/2020/04/16/suan-fa/5.ti-huan-kong-ge/"/>
+    <id>https://eriecorner.github.io/2020/04/16/suan-fa/5.ti-huan-kong-ge/</id>
     <published>2020-04-15T16:00:00.000Z</published>
     <updated>2020-04-21T12:32:15.089Z</updated>
     
@@ -283,8 +283,8 @@
   
   <entry>
     <title>6. 从尾到头打印链表</title>
-    <link href="https://eriecorner.github.io/2020/04/16/6.cong-wei-dao-tou-da-yin-lian-biao/"/>
-    <id>https://eriecorner.github.io/2020/04/16/6.cong-wei-dao-tou-da-yin-lian-biao/</id>
+    <link href="https://eriecorner.github.io/2020/04/16/suan-fa/6.cong-wei-dao-tou-da-yin-lian-biao/"/>
+    <id>https://eriecorner.github.io/2020/04/16/suan-fa/6.cong-wei-dao-tou-da-yin-lian-biao/</id>
     <published>2020-04-15T16:00:00.000Z</published>
     <updated>2020-04-21T12:44:26.941Z</updated>
     
@@ -310,8 +310,8 @@
   
   <entry>
     <title>2. 旋转数组中的最小元素</title>
-    <link href="https://eriecorner.github.io/2020/04/15/2.xuan-zhuan-shu-zu-zhong-de-zui-xiao-yuan-su/"/>
-    <id>https://eriecorner.github.io/2020/04/15/2.xuan-zhuan-shu-zu-zhong-de-zui-xiao-yuan-su/</id>
+    <link href="https://eriecorner.github.io/2020/04/15/suan-fa/2.xuan-zhuan-shu-zu-zhong-de-zui-xiao-yuan-su/"/>
+    <id>https://eriecorner.github.io/2020/04/15/suan-fa/2.xuan-zhuan-shu-zu-zhong-de-zui-xiao-yuan-su/</id>
     <published>2020-04-14T16:00:00.000Z</published>
     <updated>2020-04-21T12:43:53.289Z</updated>
     
@@ -335,35 +335,9 @@
   </entry>
   
   <entry>
-    <title>4 二维数组中查找目标值</title>
-    <link href="https://eriecorner.github.io/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/"/>
-    <id>https://eriecorner.github.io/2020/04/15/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/</id>
-    <published>2020-04-14T16:00:00.000Z</published>
-    <updated>2020-04-21T12:32:03.184Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个二维数组int num[M][N]，其每一行从左到右递增排序，从上到下也是递增排序。给定一个数，判断这个数是否在该二维数组中。</p><h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><p>该二维数组中的一个数，小于它的数一定在其左边，大于它的数一定在其下边。因此，从右上角开始查找，就可以根据 target 和当前元素的大小关系来缩小查找区间，当前元素的查找区间为左下角的所有元素。</p><h2 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h2><p>时间复杂度O(MN) ，空间复杂度O(1)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public boolean find(int target, int[][] nums) &#123;</span><br><span class="line">       if (nums &#x3D;&#x3D; null || nums.length &#x3D;&#x3D; 0 || nums[0].length &#x3D;&#x3D; 0) &#123;</span><br><span class="line">           return false;</span><br><span class="line">       &#125;</span><br><span class="line">       int r &#x3D; 0, c &#x3D; nums[0].length - 1;</span><br><span class="line">       while (r &lt; nums.length - 1 &amp;&amp; c &gt;&#x3D; 0) &#123;</span><br><span class="line">           if (target &#x3D;&#x3D; nums[r][c]) &#123;</span><br><span class="line">               return true;</span><br><span class="line">           &#125;else if (target&gt;nums[r][c])&#123;</span><br><span class="line">               r++;</span><br><span class="line">           &#125;else &#123;</span><br><span class="line">               c--;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       return false;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;给定一个二维数组int num[M][N]，其每一行从左到右递增排序，从上到下也是递增排序。给定一个数，判断这个数是否在该二
-      
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="https://eriecorner.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="数组" scheme="https://eriecorner.github.io/tags/%E6%95%B0%E7%BB%84/"/>
-    
-  </entry>
-  
-  <entry>
     <title>3. 数组中重复的数字</title>
-    <link href="https://eriecorner.github.io/2020/04/15/3.shu-zu-zhong-chong-fu-de-shu-zi/"/>
-    <id>https://eriecorner.github.io/2020/04/15/3.shu-zu-zhong-chong-fu-de-shu-zi/</id>
+    <link href="https://eriecorner.github.io/2020/04/15/suan-fa/3.shu-zu-zhong-chong-fu-de-shu-zi/"/>
+    <id>https://eriecorner.github.io/2020/04/15/suan-fa/3.shu-zu-zhong-chong-fu-de-shu-zi/</id>
     <published>2020-04-14T16:00:00.000Z</published>
     <updated>2020-04-21T12:31:42.739Z</updated>
     
@@ -387,9 +361,35 @@
   </entry>
   
   <entry>
+    <title>4 二维数组中查找目标值</title>
+    <link href="https://eriecorner.github.io/2020/04/15/suan-fa/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/"/>
+    <id>https://eriecorner.github.io/2020/04/15/suan-fa/4.er-wei-shu-zu-zhong-cha-zhao-mu-biao-zhi/</id>
+    <published>2020-04-14T16:00:00.000Z</published>
+    <updated>2020-04-21T12:32:03.184Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个二维数组int num[M][N]，其每一行从左到右递增排序，从上到下也是递增排序。给定一个数，判断这个数是否在该二维数组中。</p><h2 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h2><p>该二维数组中的一个数，小于它的数一定在其左边，大于它的数一定在其下边。因此，从右上角开始查找，就可以根据 target 和当前元素的大小关系来缩小查找区间，当前元素的查找区间为左下角的所有元素。</p><h2 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h2><p>时间复杂度O(MN) ，空间复杂度O(1)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public boolean find(int target, int[][] nums) &#123;</span><br><span class="line">       if (nums &#x3D;&#x3D; null || nums.length &#x3D;&#x3D; 0 || nums[0].length &#x3D;&#x3D; 0) &#123;</span><br><span class="line">           return false;</span><br><span class="line">       &#125;</span><br><span class="line">       int r &#x3D; 0, c &#x3D; nums[0].length - 1;</span><br><span class="line">       while (r &lt; nums.length - 1 &amp;&amp; c &gt;&#x3D; 0) &#123;</span><br><span class="line">           if (target &#x3D;&#x3D; nums[r][c]) &#123;</span><br><span class="line">               return true;</span><br><span class="line">           &#125;else if (target&gt;nums[r][c])&#123;</span><br><span class="line">               r++;</span><br><span class="line">           &#125;else &#123;</span><br><span class="line">               c--;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       return false;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;给定一个二维数组int num[M][N]，其每一行从左到右递增排序，从上到下也是递增排序。给定一个数，判断这个数是否在该二
+      
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="https://eriecorner.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="数组" scheme="https://eriecorner.github.io/tags/%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
     <title>1.1 斐波那契数列</title>
-    <link href="https://eriecorner.github.io/2020/04/14/1.1-fei-bo-na-qi-shu-lie/"/>
-    <id>https://eriecorner.github.io/2020/04/14/1.1-fei-bo-na-qi-shu-lie/</id>
+    <link href="https://eriecorner.github.io/2020/04/14/suan-fa/1.1-fei-bo-na-qi-shu-lie/"/>
+    <id>https://eriecorner.github.io/2020/04/14/suan-fa/1.1-fei-bo-na-qi-shu-lie/</id>
     <published>2020-04-13T16:00:00.000Z</published>
     <updated>2020-04-21T12:36:01.069Z</updated>
     
@@ -415,8 +415,8 @@
   
   <entry>
     <title>1.2 矩形覆盖问题</title>
-    <link href="https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/"/>
-    <id>https://eriecorner.github.io/2020/04/14/1.2-ju-xing-fu-gai-wen-ti/</id>
+    <link href="https://eriecorner.github.io/2020/04/14/suan-fa/1.2-ju-xing-fu-gai-wen-ti/"/>
+    <id>https://eriecorner.github.io/2020/04/14/suan-fa/1.2-ju-xing-fu-gai-wen-ti/</id>
     <published>2020-04-13T16:00:00.000Z</published>
     <updated>2020-04-21T12:36:14.433Z</updated>
     
@@ -440,20 +440,19 @@
   </entry>
   
   <entry>
-    <title>1.3 跳台阶问题</title>
-    <link href="https://eriecorner.github.io/2020/04/14/1.3-tiao-tai-jie-wen-ti/"/>
-    <id>https://eriecorner.github.io/2020/04/14/1.3-tiao-tai-jie-wen-ti/</id>
+    <title>1.4 变态跳台阶问题</title>
+    <link href="https://eriecorner.github.io/2020/04/14/suan-fa/1.4-bian-tai-tiao-tai-jie-wen-ti/"/>
+    <id>https://eriecorner.github.io/2020/04/14/suan-fa/1.4-bian-tai-tiao-tai-jie-wen-ti/</id>
     <published>2020-04-13T16:00:00.000Z</published>
-    <updated>2020-04-21T12:36:25.298Z</updated>
+    <updated>2020-04-21T12:36:43.501Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述:"></a>题目描述:</h4><p>一只青蛙一次可以跳上 1 级台阶，也可以跳上 2 级。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。</p><h4 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h4><p>f(1) = 1; f(2) = 2; n&gt;2则f(n) = f(n-1)+f(n-2)</p><h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">private int jumpFloor(int n) &#123;</span><br><span class="line">        if (n &lt;&#x3D; 2) &#123;</span><br><span class="line">            return n;</span><br><span class="line">        &#125;</span><br><span class="line">        int preOne &#x3D; 2, preTwo &#x3D; 1, result &#x3D; 0;</span><br><span class="line">        for (int i &#x3D; 3; i &lt;&#x3D; n; i++) &#123;</span><br><span class="line">            result &#x3D; preOne + preTwo;</span><br><span class="line">            preTwo &#x3D; preOne;</span><br><span class="line">            preOne &#x3D; result;</span><br><span class="line">        &#125;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>一只青蛙一次可以跳上 1 级台阶，也可以跳上 2 级… 它也可以跳上 n 级。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。</p><h4 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h4><pre><code>  跳上 n-1 级台阶，可以从 n-2 级跳 1 级上去，也可以从 n-3 级跳 2 级上去...，那么f(n-1) = f(n-2) + f(n-3) + ... + f(0)；同样，跳上 n 级台阶，可以从 n-1 级跳 1 级上去，也可以从 n-2 级跳 2 级上去... ，那么  f(n) = f(n-1) + f(n-2) + ... + f(0)综上可得  f(n) - f(n-1) = f(n-1)即  f(n) = 2*f(n-1)</code></pre><h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">private int jumpFloorIn(int n) &#123;</span><br><span class="line">       return (int) Math.pow(2, n - 1);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h4 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述:&quot;&gt;&lt;/a&gt;题目描述:&lt;/h4&gt;&lt;p&gt;一只青蛙一次可以跳上 1 级台阶，也可以跳上 2 级。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。&lt;/p&gt;
-&lt;h4 
+        &lt;h4 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h4&gt;&lt;p&gt;一只青蛙一次可以跳上 1 级台阶，也可以跳上 2 级… 它也可以跳上 n 级。求该青蛙跳上一个 n 级的台阶总共有多少种跳法
       
     
     </summary>
@@ -467,19 +466,20 @@
   </entry>
   
   <entry>
-    <title>1.4 变态跳台阶问题</title>
-    <link href="https://eriecorner.github.io/2020/04/14/1.4-bian-tai-tiao-tai-jie-wen-ti/"/>
-    <id>https://eriecorner.github.io/2020/04/14/1.4-bian-tai-tiao-tai-jie-wen-ti/</id>
+    <title>1.3 跳台阶问题</title>
+    <link href="https://eriecorner.github.io/2020/04/14/suan-fa/1.3-tiao-tai-jie-wen-ti/"/>
+    <id>https://eriecorner.github.io/2020/04/14/suan-fa/1.3-tiao-tai-jie-wen-ti/</id>
     <published>2020-04-13T16:00:00.000Z</published>
-    <updated>2020-04-21T12:36:43.501Z</updated>
+    <updated>2020-04-21T12:36:25.298Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>一只青蛙一次可以跳上 1 级台阶，也可以跳上 2 级… 它也可以跳上 n 级。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。</p><h4 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h4><pre><code>  跳上 n-1 级台阶，可以从 n-2 级跳 1 级上去，也可以从 n-3 级跳 2 级上去...，那么f(n-1) = f(n-2) + f(n-3) + ... + f(0)；同样，跳上 n 级台阶，可以从 n-1 级跳 1 级上去，也可以从 n-2 级跳 2 级上去... ，那么  f(n) = f(n-1) + f(n-2) + ... + f(0)综上可得  f(n) - f(n-1) = f(n-1)即  f(n) = 2*f(n-1)</code></pre><h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">private int jumpFloorIn(int n) &#123;</span><br><span class="line">       return (int) Math.pow(2, n - 1);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述:"></a>题目描述:</h4><p>一只青蛙一次可以跳上 1 级台阶，也可以跳上 2 级。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。</p><h4 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h4><p>f(1) = 1; f(2) = 2; n&gt;2则f(n) = f(n-1)+f(n-2)</p><h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">private int jumpFloor(int n) &#123;</span><br><span class="line">        if (n &lt;&#x3D; 2) &#123;</span><br><span class="line">            return n;</span><br><span class="line">        &#125;</span><br><span class="line">        int preOne &#x3D; 2, preTwo &#x3D; 1, result &#x3D; 0;</span><br><span class="line">        for (int i &#x3D; 3; i &lt;&#x3D; n; i++) &#123;</span><br><span class="line">            result &#x3D; preOne + preTwo;</span><br><span class="line">            preTwo &#x3D; preOne;</span><br><span class="line">            preOne &#x3D; result;</span><br><span class="line">        &#125;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h4 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h4&gt;&lt;p&gt;一只青蛙一次可以跳上 1 级台阶，也可以跳上 2 级… 它也可以跳上 n 级。求该青蛙跳上一个 n 级的台阶总共有多少种跳法
+        &lt;h4 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述:&quot;&gt;&lt;/a&gt;题目描述:&lt;/h4&gt;&lt;p&gt;一只青蛙一次可以跳上 1 级台阶，也可以跳上 2 级。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。&lt;/p&gt;
+&lt;h4 
       
     
     </summary>
