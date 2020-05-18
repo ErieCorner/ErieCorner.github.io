@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>【LeetCode】7. 整数反转 | 紫依卓兰</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#60A267">
+    
+    
+    <meta name="keywords" content="数学">
+    <meta name="description" content="题目简介 题目来源： LeetCode  题目描述： 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。  示例    12输入: 123输出: 321 12输入: -123输出: -321 12输入: 120输出: 21 &#x3D;&#x3D;注意：&#x3D;&#x3D; 假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 [−231,  231 − 1]。请根据这个假设，如果反转后整数溢出那么">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【LeetCode】7. 整数反转">
+<meta property="og:url" content="https://eriecorner.github.io/2020/05/03/suan-fa/leetcode/7.zheng-shu-fan-zhuan/index.html">
+<meta property="og:site_name" content="紫依卓兰">
+<meta property="og:description" content="题目简介 题目来源： LeetCode  题目描述： 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。  示例    12输入: 123输出: 321 12输入: -123输出: -321 12输入: 120输出: 21 &#x3D;&#x3D;注意：&#x3D;&#x3D; 假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 [−231,  231 − 1]。请根据这个假设，如果反转后整数溢出那么">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-02T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-05-18T14:21:17.696Z">
+<meta property="article:author" content="紫依卓兰">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="紫依卓兰" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">紫依卓兰</h5>
+          <a href="mailto:eriecorner@gmail.com" title="eriecorner@gmail.com" class="mail">eriecorner@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/ErieCorner" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">【LeetCode】7. 整数反转</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">【LeetCode】7. 整数反转</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-05-02T16:00:00.000Z" itemprop="datePublished" class="page-time">
+  2020-05-03
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题目简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">题目简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解题思路"><span class="post-toc-number">2.</span> <span class="post-toc-text">解题思路</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码实现"><span class="post-toc-number">3.</span> <span class="post-toc-text">代码实现</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#JAVA实现"><span class="post-toc-number">3.0.1.</span> <span class="post-toc-text">JAVA实现</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#kotlin实现"><span class="post-toc-number">3.0.2.</span> <span class="post-toc-text">kotlin实现</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#复杂度分析"><span class="post-toc-number">4.</span> <span class="post-toc-text">复杂度分析</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-算法/LeetCode/7. 整数反转"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">【LeetCode】7. 整数反转</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-05-03 00:00:00" datetime="2020-05-02T16:00:00.000Z"  itemprop="datePublished">2020-05-03</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="题目简介"><a href="#题目简介" class="headerlink" title="题目简介"></a>题目简介</h2><ul>
+<li><p>题目来源： <a href="https://leetcode-cn.com/problems/reverse-integer/" target="_blank" rel="noopener">LeetCode</a></p>
+</li>
+<li><p>题目描述： 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。</p>
+</li>
+<li><p>示例</p>
+</li>
+</ul>
+<ol>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: 123</span><br><span class="line">输出: 321</span><br></pre></td></tr></table></figure></li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: -123</span><br><span class="line">输出: -321</span><br></pre></td></tr></table></figure></li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: 120</span><br><span class="line">输出: 21</span><br></pre></td></tr></table></figure>
+==注意：== 假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 [−231,  231 − 1]。请根据这个假设，如果反转后整数溢出那么就返回 0。</li>
+</ol>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><ul>
+<li>通过数学运算获得各位上的数字，高位变低位<code>$x/10^n$</code>,低位变高位<code>$x*10^n$</code></li>
+</ul>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><h4 id="JAVA实现"><a href="#JAVA实现" class="headerlink" title="JAVA实现"></a>JAVA实现</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">public int reverse(int x) &#123;</span><br><span class="line">        int INT_MAX &#x3D; (int)Math.pow(2,31)-1;</span><br><span class="line">        int INT_MIN &#x3D; -(int)Math.pow(2,31);</span><br><span class="line">        int result &#x3D; 0;</span><br><span class="line">        int y &#x3D; 0;</span><br><span class="line">        while(x!&#x3D;0)&#123;</span><br><span class="line">            y &#x3D; x%10;</span><br><span class="line">            x&#x2F;&#x3D;10;</span><br><span class="line">            if(result&gt;INT_MAX&#x2F;10||(result&#x3D;&#x3D;INT_MAX&#x2F;10&amp;&amp;y&gt;7))&#123;</span><br><span class="line">                return 0;</span><br><span class="line">            &#125;</span><br><span class="line">            if(result&lt;INT_MIN&#x2F;10||(result&#x3D;&#x3D;INT_MIN&#x2F;10&amp;&amp;y&lt;-8))&#123;</span><br><span class="line">                return 0;</span><br><span class="line">            &#125;</span><br><span class="line">            result &#x3D; result*10+y;</span><br><span class="line">        &#125;</span><br><span class="line">return result;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="kotlin实现"><a href="#kotlin实现" class="headerlink" title="kotlin实现"></a>kotlin实现</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">fun reverse(x: Int): Int &#123;</span><br><span class="line">         var x &#x3D; x</span><br><span class="line">        var y &#x3D; 0</span><br><span class="line">        var result &#x3D; 0</span><br><span class="line">        val max &#x3D; 2.0.pow(31.0).toInt() - 1</span><br><span class="line">        val min &#x3D; -2.0.pow(31.0).toInt()</span><br><span class="line">        while(x!&#x3D;0)&#123;</span><br><span class="line">            y &#x3D; x%10</span><br><span class="line">            x&#x3D;x&#x2F;10</span><br><span class="line">            if(result&gt;max&#x2F;10||(result&#x3D;&#x3D;max&#x2F;10&amp;&amp;y&gt;7))&#123;</span><br><span class="line">                return 0;</span><br><span class="line">            &#125;</span><br><span class="line">            if(result&lt;min&#x2F;10||(result&#x3D;&#x3D;min&#x2F;10&amp;&amp;y&lt;-8))&#123;</span><br><span class="line">                return 0;</span><br><span class="line">            &#125;</span><br><span class="line">            result &#x3D; result*10+y;</span><br><span class="line">        </span><br><span class="line">        &#125;</span><br><span class="line">        return result</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h2><ul>
+<li><p>时间复杂度：<code>$O(log(x))$</code><br>x 中大约有 <code>$log10(x)$</code></p>
+</li>
+<li><p>空间复杂度：<code>$O(1)$</code></p>
+</li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2020-05-18T14:21:17.696Z" itemprop="dateUpdated">2020-05-18 22:21:17</time>
+</span><br>
+
+
+        
+        每天进步一点点，前进不止一小点。习惯之始，如蛛丝，习惯之后，如绳索。贵在坚持，难在坚持，成在坚持。
+        
+    </div>
+    
+    <footer>
+        <a href="https://eriecorner.github.io">
+            <img src="/img/avatar.jpg" alt="紫依卓兰">
+            紫依卓兰
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/05/03/suan-fa/leetcode/7.zheng-shu-fan-zhuan/&title=《【LeetCode】7. 整数反转》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/05/03/suan-fa/leetcode/7.zheng-shu-fan-zhuan/&title=《【LeetCode】7. 整数反转》 — 紫依卓兰&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/05/03/suan-fa/leetcode/7.zheng-shu-fan-zhuan/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《【LeetCode】7. 整数反转》 — 紫依卓兰&url=https://eriecorner.github.io/2020/05/03/suan-fa/leetcode/7.zheng-shu-fan-zhuan/&via=https://eriecorner.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/05/03/suan-fa/leetcode/7.zheng-shu-fan-zhuan/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2020/05/04/suan-fa/leetcode/9.hui-wen-shu/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">【LeetCode】11. 盛最多水的容器</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/05/02/suan-fa/leetcode/3.wu-chong-fu-zi-fu-de-zui-chang-zi-chuan/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">【LeetCode】3. 无重复字符的最长子串</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        var id = location.pathname
+        if (location.pathname.length > 50) {
+          id = location.pathname.replace(/\/\d+\/\d+\/\d+\//, '').replace('/', '').substring(0, 50)
+        }
+        const gitalk = new Gitalk({
+          clientID: '94ba916abc05e8ba5638',
+          clientSecret: '3eaa8f56dca335ac07b2a9e495f4834a2ca8e326',
+          repo: 'eriecorner.github.io',
+          owner: 'eriecorner',
+          admin: ['eriecorner'],
+          id: id,      // Ensure uniqueness and length less than 50
+          title: document.title.split('|')[0],
+          distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
+</section>
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>紫依卓兰 &copy; 2015 - 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/05/03/suan-fa/leetcode/7.zheng-shu-fan-zhuan/&title=《【LeetCode】7. 整数反转》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/05/03/suan-fa/leetcode/7.zheng-shu-fan-zhuan/&title=《【LeetCode】7. 整数反转》 — 紫依卓兰&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/05/03/suan-fa/leetcode/7.zheng-shu-fan-zhuan/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《【LeetCode】7. 整数反转》 — 紫依卓兰&url=https://eriecorner.github.io/2020/05/03/suan-fa/leetcode/7.zheng-shu-fan-zhuan/&via=https://eriecorner.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/05/03/suan-fa/leetcode/7.zheng-shu-fan-zhuan/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACrUlEQVR42u3aQW4jMQwEQP//09nrAkkm3aSU9QI1J8OxZ1g+SEyLr1d8ffx1fX7/+TPtUz7fbX9nPDw8vLO8j8crKT355PM9k9IT/Bf3wcPDw7vGS273XFb7fsv+7vUPFjw8PLy34dWPWTTKz1Q8PDy8/5HXNrubO+Ph4eG9Dy8vaBO/5o1123YfyFrw8PDwYt7saOrfvr5yvoeHh4e3PlXPN4lZk72pJKoWDw8P7wIvX3Bnh1ItO9+ciuEwPDw8vAu89qM3DsPad/IK8fDw8M7yNm30rIGeDWa121XRp+Ph4eGVvHbxTRrodinPN57hCBceHh7eZV5+hF8EqeXAQTsQNjwGw8PDw7vG27fL+82mHfD6IqXGw8PDO8R7bos3j2mDg2HS3J7s4eHh4R3l7Uev2hGr/bbxwxPx8PDwLvPysCAPcE9tD23Ui4eHh3eb15Y7w2zGDmaDCHh4eHj3eJvS88OqYYmbwAIPDw/vAq8tOml5N6XnG1I79ICHh4d3itdGpccW6OBbsyd+EePi4eHhXeDNhgaSoKEt/bmeujXHw8PDu8Brl/Xnm+bfzRvx2U/2mu1aeHh4eKUiWXDrpna0oLfDXkXKgoeHh7fmJQt0u8TnAW7yrDZcLmJcPDw8vBFvz9jHuLMNJj9sw8PDw7vN2xeat+Z5qNG23cVJGh4eHt5R3qzhLpbsOBBpBxGijQEPDw/vEC/PfduGeNOyzzYqPDw8vBu8j/JqI9o2wJ1Fw9/+FQ8PD+8CbxM3nGqX22GsUwEKHh4e3oY3G3XKiz41CpBsDHh4eHi/yZudHG1ChyvJCh4eHt7b8563gTY4yH+Ior3Gw8PDewNeHubmbfGVcSs8PDy8y7z20CuJA9rWeTay8AMVDw8P7wJv9g///qZ7zOvUhYeHh5c+8Q9U43OostimGwAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

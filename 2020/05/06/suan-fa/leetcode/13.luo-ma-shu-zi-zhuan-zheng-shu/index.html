@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>【LeetCode】13. 罗马数字转整数 | 紫依卓兰</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#60A267">
+    
+    
+    <meta name="keywords" content="数学">
+    <meta name="description" content="题目简介 题目来源： LeetCode 题目描述： 罗马数字包含以下七种字符： I， V， X， L，C，D 和 M。12345678字符          数值I             1V             5X             10L             50C             100D             500M             1000 例如，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【LeetCode】13. 罗马数字转整数">
+<meta property="og:url" content="https://eriecorner.github.io/2020/05/06/suan-fa/leetcode/13.luo-ma-shu-zi-zhuan-zheng-shu/index.html">
+<meta property="og:site_name" content="紫依卓兰">
+<meta property="og:description" content="题目简介 题目来源： LeetCode 题目描述： 罗马数字包含以下七种字符： I， V， X， L，C，D 和 M。12345678字符          数值I             1V             5X             10L             50C             100D             500M             1000 例如，">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-05T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-05-18T14:20:54.391Z">
+<meta property="article:author" content="紫依卓兰">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="紫依卓兰" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">紫依卓兰</h5>
+          <a href="mailto:eriecorner@gmail.com" title="eriecorner@gmail.com" class="mail">eriecorner@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/ErieCorner" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">【LeetCode】13. 罗马数字转整数</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">【LeetCode】13. 罗马数字转整数</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-05-05T16:00:00.000Z" itemprop="datePublished" class="page-time">
+  2020-05-06
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题目简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">题目简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解题思路"><span class="post-toc-number">2.</span> <span class="post-toc-text">解题思路</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码实现"><span class="post-toc-number">3.</span> <span class="post-toc-text">代码实现</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#JAVA实现"><span class="post-toc-number">3.0.1.</span> <span class="post-toc-text">JAVA实现</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#kotlin实现"><span class="post-toc-number">3.0.2.</span> <span class="post-toc-text">kotlin实现</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#复杂度分析"><span class="post-toc-number">4.</span> <span class="post-toc-text">复杂度分析</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-算法/LeetCode/13. 罗马数字转整数"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">【LeetCode】13. 罗马数字转整数</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-05-06 00:00:00" datetime="2020-05-05T16:00:00.000Z"  itemprop="datePublished">2020-05-06</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="题目简介"><a href="#题目简介" class="headerlink" title="题目简介"></a>题目简介</h2><ul>
+<li>题目来源： <a href="https://leetcode-cn.com/problems/roman-to-integer/" target="_blank" rel="noopener">LeetCode</a></li>
+<li>题目描述： 罗马数字包含以下七种字符： I， V， X， L，C，D 和 M。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">字符          数值</span><br><span class="line">I             1</span><br><span class="line">V             5</span><br><span class="line">X             10</span><br><span class="line">L             50</span><br><span class="line">C             100</span><br><span class="line">D             500</span><br><span class="line">M             1000</span><br></pre></td></tr></table></figure>
+例如， 罗马数字 2 写做 II ，即为两个并列的 1。12 写做 XII ，即为 X + II 。 27 写做  XXVII, 即为 XX + V + II 。</li>
+</ul>
+<p>通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 IIII，而是 IV。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 IX。这个特殊的规则只适用于以下六种情况：</p>
+<pre><code>- I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。
+- X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。 
+- C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。     </code></pre><p>给定一个罗马数字，将其转换成整数。输入确保在 1 到 3999 的范围内。</p>
+<ul>
+<li>示例1.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;III&quot;</span><br><span class="line">输出: 3</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>2.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;IV&quot;</span><br><span class="line">输出: 4</span><br></pre></td></tr></table></figure>
+
+<p>3.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;LVIII&quot;</span><br><span class="line">输出: 58</span><br><span class="line">解释: L &#x3D; 50, V &#x3D; 5, III &#x3D; 3.</span><br></pre></td></tr></table></figure>
+<p>4.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;MCMXCIV&quot;</span><br><span class="line">输出: 1994</span><br><span class="line">解释: M &#x3D; 1000, CM &#x3D; 900, XC &#x3D; 90, IV &#x3D; 4.</span><br></pre></td></tr></table></figure>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><ul>
+<li>分别列出每个字符对应的数字，然后循环遍历比较前后两个数字，若前面的数字比后面的大，则和减去前面的数；否则和加上前面的数。</li>
+</ul>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><h4 id="JAVA实现"><a href="#JAVA实现" class="headerlink" title="JAVA实现"></a>JAVA实现</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">public int romanToInt(String s) &#123;</span><br><span class="line">        int num &#x3D; getNum(s.charAt(0));</span><br><span class="line">        int sum &#x3D; 0;</span><br><span class="line">        for(int i &#x3D; 1;i&lt;s.length();i++)&#123;</span><br><span class="line">            int curr &#x3D; getNum(s.charAt(i));</span><br><span class="line">            if(num&lt;curr)&#123;</span><br><span class="line">                sum-&#x3D;num;</span><br><span class="line">            &#125;else&#123;</span><br><span class="line">                sum+&#x3D; num;</span><br><span class="line">            &#125;</span><br><span class="line">            num &#x3D; curr;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        return sum+&#x3D; num;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    public int getNum(char str)&#123;</span><br><span class="line">        switch(str)&#123;</span><br><span class="line">            case &#39;I&#39;:</span><br><span class="line">            return 1;</span><br><span class="line">            case &#39;V&#39;:</span><br><span class="line">            return 5;</span><br><span class="line">            case &#39;X&#39;:</span><br><span class="line">            return 10;</span><br><span class="line">            case &#39;L&#39;:</span><br><span class="line">            return 50;</span><br><span class="line">            case &#39;C&#39;:</span><br><span class="line">            return 100;</span><br><span class="line">            case &#39;D&#39;:</span><br><span class="line">            return 500;</span><br><span class="line">            case &#39;M&#39;:</span><br><span class="line">            return 1000;</span><br><span class="line">            default:return 0;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="kotlin实现"><a href="#kotlin实现" class="headerlink" title="kotlin实现"></a>kotlin实现</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">fun romanToInt(s: String): Int &#123;</span><br><span class="line">      var num &#x3D; getNum(s[0])</span><br><span class="line">      var sum &#x3D; 0</span><br><span class="line">      for (i in 1 until s.length) &#123;</span><br><span class="line">          val curr &#x3D; getNum(s[i])</span><br><span class="line">          if (num &lt; curr) &#123;</span><br><span class="line">              sum -&#x3D; num</span><br><span class="line">          &#125; else &#123;</span><br><span class="line">              sum +&#x3D; num</span><br><span class="line">          &#125;</span><br><span class="line">          num &#x3D; curr</span><br><span class="line">      &#125;</span><br><span class="line">      return num.let &#123; sum +&#x3D; it; sum &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  fun getNum(str: Char): Int &#123;</span><br><span class="line">      return when (str) &#123;</span><br><span class="line">          &#39;I&#39; -&gt; 1</span><br><span class="line">          &#39;V&#39; -&gt; 5</span><br><span class="line">          &#39;X&#39; -&gt; 10</span><br><span class="line">          &#39;L&#39; -&gt; 50</span><br><span class="line">          &#39;C&#39; -&gt; 100</span><br><span class="line">          &#39;D&#39; -&gt; 500</span><br><span class="line">          &#39;M&#39; -&gt; 1000</span><br><span class="line">          else -&gt; 0</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h2><ul>
+<li>时间复杂度：<code>$O(N)$</code>：N 是字符串的长度</li>
+<li>空间复杂度：<code>$O(1)$</code></li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2020-05-18T14:20:54.391Z" itemprop="dateUpdated">2020-05-18 22:20:54</time>
+</span><br>
+
+
+        
+        每天进步一点点，前进不止一小点。习惯之始，如蛛丝，习惯之后，如绳索。贵在坚持，难在坚持，成在坚持。
+        
+    </div>
+    
+    <footer>
+        <a href="https://eriecorner.github.io">
+            <img src="/img/avatar.jpg" alt="紫依卓兰">
+            紫依卓兰
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/05/06/suan-fa/leetcode/13.luo-ma-shu-zi-zhuan-zheng-shu/&title=《【LeetCode】13. 罗马数字转整数》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/05/06/suan-fa/leetcode/13.luo-ma-shu-zi-zhuan-zheng-shu/&title=《【LeetCode】13. 罗马数字转整数》 — 紫依卓兰&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/05/06/suan-fa/leetcode/13.luo-ma-shu-zi-zhuan-zheng-shu/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《【LeetCode】13. 罗马数字转整数》 — 紫依卓兰&url=https://eriecorner.github.io/2020/05/06/suan-fa/leetcode/13.luo-ma-shu-zi-zhuan-zheng-shu/&via=https://eriecorner.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/05/06/suan-fa/leetcode/13.luo-ma-shu-zi-zhuan-zheng-shu/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2020/05/07/suan-fa/leetcode/15.san-shu-zhi-he/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">【LeetCode】15. 三数之和</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/05/06/suan-fa/leetcode/12.zheng-shu-zhuan-luo-ma-shu-zi/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">【LeetCode】12. 整数转罗马数字</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        var id = location.pathname
+        if (location.pathname.length > 50) {
+          id = location.pathname.replace(/\/\d+\/\d+\/\d+\//, '').replace('/', '').substring(0, 50)
+        }
+        const gitalk = new Gitalk({
+          clientID: '94ba916abc05e8ba5638',
+          clientSecret: '3eaa8f56dca335ac07b2a9e495f4834a2ca8e326',
+          repo: 'eriecorner.github.io',
+          owner: 'eriecorner',
+          admin: ['eriecorner'],
+          id: id,      // Ensure uniqueness and length less than 50
+          title: document.title.split('|')[0],
+          distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
+</section>
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>紫依卓兰 &copy; 2015 - 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/05/06/suan-fa/leetcode/13.luo-ma-shu-zi-zhuan-zheng-shu/&title=《【LeetCode】13. 罗马数字转整数》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/05/06/suan-fa/leetcode/13.luo-ma-shu-zi-zhuan-zheng-shu/&title=《【LeetCode】13. 罗马数字转整数》 — 紫依卓兰&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/05/06/suan-fa/leetcode/13.luo-ma-shu-zi-zhuan-zheng-shu/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《【LeetCode】13. 罗马数字转整数》 — 紫依卓兰&url=https://eriecorner.github.io/2020/05/06/suan-fa/leetcode/13.luo-ma-shu-zi-zhuan-zheng-shu/&via=https://eriecorner.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/05/06/suan-fa/leetcode/13.luo-ma-shu-zi-zhuan-zheng-shu/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADMElEQVR42u3aQW7jQAwEwPz/09kHGJG7SS1gjUsnwXGkqfGBIHt+fuLr9+VKvpN///qT1/vX5/z8jwsbGxv7IexkuQnjr6XM7l/fcr22euuxsbGxj2O3S9+UtISXF9FhkcPGxsbGDkh5cZq1PdjY2NjYM3YyALr+Zv6Ee9eAjY2NfTa7LUj5+KZ95r3z/BtmadjY2Ngfz85T0c+//y/5NjY2NvYHs3/LK28P8iHRvYUzUmBjY2MfxM4LQD4AymPdzXtnR4iwsbGxz2O3o5xkANQuK48EkiM+0bZiY2NjH8dOykkeA7TTm31LUzc52NjY2Mex24I0244ZuN3uZPuwsbGxz2O3B2iulzV7fv7GNoquU2tsbGzsB7L35ad9QvL5/mgRNjY29jew83/LFz0rbO2mbEILbGxs7JPY+6HSZnzfhrVtzPDnyrGxsbGPZrcFbDPoaduY9l1/vh0bGxv7UPY+ZG0LXluuZoOkN/k2NjY29sPZdUS6Xlw7nNo0PG9+NmxsbOzj2MnIJikPs9ZiX0rr9WBjY2MfxL53JNQeymnbm83xo/r4DjY2NvbHs2fLasODdtfzUtoWM2xsbOzz2HkByP96/cpko/dFrmirsLGxsR/Ovl56XoruOuiTbG4+SHqTb2NjY2Mfyt4M2Wdhbb597X19WAcbGxv7gezZuD8vHnnRmiUbN0QL2NjY2A9nzwb6bYa8GVfN2pt6qISNjY19BDsvErM4dhYb5A1M0pZgY2Njn8duj7+0B2iSMLgYAN0UG2NjY2Ofx24Xt8HkJ4na6CJporCxsbG/jV0nDOXxnVkMfFe7go2NjX0ee98qtOWtbS3alqMYJ2FjY2Mfwd6Mb5JgYDNIyjeuiDqwsbGxj2D/llcbBiTNSYLcT4SKjBobGxv7UexZpJq3H21TkY+N8m1axcnY2NjYD2HPYtdkxNNuzew3yUPoonpjY2NjP5DdtgTtBrVF6K644k0fho2Njf2V7E2zkY+l9hsXtSLY2NjYX8nelLHZrGsf7mJjY2N/AzsvS/nYKA9cr981C57f/HjY2NjYB7HzMpAsa3Pspn17vtGrfBsbGxv7c9n/APtlkc047OosAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

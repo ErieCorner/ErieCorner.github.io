@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>【剑指Offer】16. 链表中倒数第k个节点 | 紫依卓兰</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#60A267">
+    
+    
+    <meta name="keywords" content="-链表">
+    <meta name="description" content="题目描述 题目来源： Nowcoder 题设： 输入一个链表，输出该链表中倒数第k个结点。  解题思路 定义两个指针（fast，slow）分别都指向头节点； 当fast指针走到k的位置时，slow指针开始走； 当fast指针走到最后时，当前slow所指指针就是的倒数第k个节点； 当链表的节点数小于k时，则返回null。  代码实现JAVA实现 先定义节点对象123456789public stat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【剑指Offer】16. 链表中倒数第k个节点">
+<meta property="og:url" content="https://eriecorner.github.io/2020/04/27/suan-fa/jian-zhi-offer/16.lian-biao-zhong-dao-shu-di-k-ge-jie-dian/index.html">
+<meta property="og:site_name" content="紫依卓兰">
+<meta property="og:description" content="题目描述 题目来源： Nowcoder 题设： 输入一个链表，输出该链表中倒数第k个结点。  解题思路 定义两个指针（fast，slow）分别都指向头节点； 当fast指针走到k的位置时，slow指针开始走； 当fast指针走到最后时，当前slow所指指针就是的倒数第k个节点； 当链表的节点数小于k时，则返回null。  代码实现JAVA实现 先定义节点对象123456789public stat">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-26T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-05-18T14:03:57.864Z">
+<meta property="article:author" content="紫依卓兰">
+<meta property="article:tag" content="-链表">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="紫依卓兰" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">紫依卓兰</h5>
+          <a href="mailto:eriecorner@gmail.com" title="eriecorner@gmail.com" class="mail">eriecorner@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/ErieCorner" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">【剑指Offer】16. 链表中倒数第k个节点</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">【剑指Offer】16. 链表中倒数第k个节点</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-04-26T16:00:00.000Z" itemprop="datePublished" class="page-time">
+  2020-04-27
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题目描述"><span class="post-toc-number">1.</span> <span class="post-toc-text">题目描述</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解题思路"><span class="post-toc-number">2.</span> <span class="post-toc-text">解题思路</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码实现"><span class="post-toc-number">3.</span> <span class="post-toc-text">代码实现</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#JAVA实现"><span class="post-toc-number">3.0.1.</span> <span class="post-toc-text">JAVA实现</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#kotlin实现"><span class="post-toc-number">3.0.2.</span> <span class="post-toc-text">kotlin实现</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-算法/剑指Offer/16. 链表中倒数第k个节点"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">【剑指Offer】16. 链表中倒数第k个节点</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-04-27 00:00:00" datetime="2020-04-26T16:00:00.000Z"  itemprop="datePublished">2020-04-27</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><ul>
+<li>题目来源： <a href="https://www.nowcoder.com/practice/529d3ae5a407492994ad2a246518148a?tpId=13&tqId=11167&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking&from=cyc_github" target="_blank" rel="noopener">Nowcoder</a></li>
+<li>题设： 输入一个链表，输出该链表中倒数第k个结点。</li>
+</ul>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><ul>
+<li>定义两个指针（fast，slow）分别都指向头节点；</li>
+<li>当fast指针走到k的位置时，slow指针开始走；</li>
+<li>当fast指针走到最后时，当前slow所指指针就是的倒数第k个节点；</li>
+<li>当链表的节点数小于k时，则返回null。</li>
+</ul>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><h4 id="JAVA实现"><a href="#JAVA实现" class="headerlink" title="JAVA实现"></a>JAVA实现</h4><ul>
+<li>先定义节点对象<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public static class ListNode &#123;</span><br><span class="line">    private int value;</span><br><span class="line">    private ListNode next;</span><br><span class="line"></span><br><span class="line">    public ListNode(int node) &#123;</span><br><span class="line">        this.value &#x3D; node;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>核心方法<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * @param head</span><br><span class="line"> * @param k</span><br><span class="line"> * @return 链表中倒数第k个结点</span><br><span class="line"> *&#x2F;</span><br><span class="line">public ListNode FindKthToTail(ListNode head, int k) &#123;</span><br><span class="line">    &#x2F;&#x2F;定义两个指针都指向头结点</span><br><span class="line">    ListNode fast,slow;</span><br><span class="line">    fast &#x3D; slow &#x3D; head;</span><br><span class="line">    int i &#x3D; 0;</span><br><span class="line">    for (; fast!&#x3D;null; i++) &#123;</span><br><span class="line">        fast &#x3D; fast.next;</span><br><span class="line">        if (i&gt;&#x3D;k)&#123;&#x2F;&#x2F;当fast走到k位置时</span><br><span class="line">            slow &#x3D; slow.next;&#x2F;&#x2F;slow也开始走</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return i&lt;k?null:slow;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>构建链表<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;构建链表</span><br><span class="line"> private ListNode BuildLinkList() &#123;</span><br><span class="line">        ListNode head &#x3D; new ListNode(0);</span><br><span class="line">        ListNode cur &#x3D; head;</span><br><span class="line">        for (int i &#x3D; 1; i &lt; 10; i++) &#123;</span><br><span class="line">            ListNode tmp &#x3D; new ListNode(i);</span><br><span class="line">            cur.next&#x3D; tmp;</span><br><span class="line">            cur &#x3D; tmp;</span><br><span class="line">        &#125;</span><br><span class="line">        return head;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+<li>测试<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@Test</span><br><span class="line">public void printResult() &#123;</span><br><span class="line">    ListNode head &#x3D; BuildLinkList();</span><br><span class="line">    System.out.println(FindKthToTail(head,2));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="kotlin实现"><a href="#kotlin实现" class="headerlink" title="kotlin实现"></a>kotlin实现</h4><ul>
+<li>定义节点对象<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">data class ListNode( val value: Int) &#123;</span><br><span class="line">     var next: ListNode? &#x3D; null</span><br><span class="line"></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
+<li>核心方法<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">fun findKthToTail(head: ListNode?, k: Int): ListNode? &#123;</span><br><span class="line">       var fast &#x3D; head</span><br><span class="line">       var slow &#x3D; head</span><br><span class="line">       var count: Int &#x3D; 0;</span><br><span class="line">       while (fast !&#x3D; null) &#123;</span><br><span class="line">           fast &#x3D; fast.next</span><br><span class="line">           if (count &gt;&#x3D; k) &#123; &#x2F;&#x2F;当fast走到k位置时</span><br><span class="line">               slow &#x3D; slow?.next &#x2F;&#x2F;slow也开始走</span><br><span class="line">           &#125;</span><br><span class="line">           count++</span><br><span class="line">       &#125;</span><br><span class="line">       return if (count &lt; k) null else slow</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></li>
+<li>构建测试链表<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">private fun buildLinkList(): ListNode? &#123;</span><br><span class="line">       val head &#x3D; ListNode(0)</span><br><span class="line">       var cur &#x3D; head</span><br><span class="line">       for (i in 1..9) &#123;</span><br><span class="line">           val tmp &#x3D; ListNode(i)</span><br><span class="line">           cur.next &#x3D; tmp</span><br><span class="line">           cur &#x3D; tmp</span><br><span class="line">       &#125;</span><br><span class="line">       return head</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></li>
+<li>测试<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@Test</span><br><span class="line">   fun printResult() &#123;</span><br><span class="line">       print(findKthToTail(buildLinkList(), 6))</span><br><span class="line">   &#125;</span><br><span class="line">   &#x2F;&#x2F;打印结果：ListNode(value&#x3D;4)</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2020-05-18T14:03:57.864Z" itemprop="dateUpdated">2020-05-18 22:03:57</time>
+</span><br>
+
+
+        
+        每天进步一点点，前进不止一小点。习惯之始，如蛛丝，习惯之后，如绳索。贵在坚持，难在坚持，成在坚持。
+        
+    </div>
+    
+    <footer>
+        <a href="https://eriecorner.github.io">
+            <img src="/img/avatar.jpg" alt="紫依卓兰">
+            紫依卓兰
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%93%BE%E8%A1%A8/" rel="tag">-链表</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/04/27/suan-fa/jian-zhi-offer/16.lian-biao-zhong-dao-shu-di-k-ge-jie-dian/&title=《【剑指Offer】16. 链表中倒数第k个节点》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/04/27/suan-fa/jian-zhi-offer/16.lian-biao-zhong-dao-shu-di-k-ge-jie-dian/&title=《【剑指Offer】16. 链表中倒数第k个节点》 — 紫依卓兰&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/04/27/suan-fa/jian-zhi-offer/16.lian-biao-zhong-dao-shu-di-k-ge-jie-dian/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《【剑指Offer】16. 链表中倒数第k个节点》 — 紫依卓兰&url=https://eriecorner.github.io/2020/04/27/suan-fa/jian-zhi-offer/16.lian-biao-zhong-dao-shu-di-k-ge-jie-dian/&via=https://eriecorner.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/04/27/suan-fa/jian-zhi-offer/16.lian-biao-zhong-dao-shu-di-k-ge-jie-dian/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2020/04/28/suan-fa/jian-zhi-offer/20.er-cha-shu-de-jing-xiang/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">【剑指Offer】20. 二叉树的镜像</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/04/27/suan-fa/jian-zhi-offer/18.he-bing-liang-ge-pai-xu-de-lian-biao/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">【剑指Offer】18. 合并两个排序的链表</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        var id = location.pathname
+        if (location.pathname.length > 50) {
+          id = location.pathname.replace(/\/\d+\/\d+\/\d+\//, '').replace('/', '').substring(0, 50)
+        }
+        const gitalk = new Gitalk({
+          clientID: '94ba916abc05e8ba5638',
+          clientSecret: '3eaa8f56dca335ac07b2a9e495f4834a2ca8e326',
+          repo: 'eriecorner.github.io',
+          owner: 'eriecorner',
+          admin: ['eriecorner'],
+          id: id,      // Ensure uniqueness and length less than 50
+          title: document.title.split('|')[0],
+          distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
+</section>
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>紫依卓兰 &copy; 2015 - 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://eriecorner.github.io/2020/04/27/suan-fa/jian-zhi-offer/16.lian-biao-zhong-dao-shu-di-k-ge-jie-dian/&title=《【剑指Offer】16. 链表中倒数第k个节点》 — 紫依卓兰&pic=https://eriecorner.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://eriecorner.github.io/2020/04/27/suan-fa/jian-zhi-offer/16.lian-biao-zhong-dao-shu-di-k-ge-jie-dian/&title=《【剑指Offer】16. 链表中倒数第k个节点》 — 紫依卓兰&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://eriecorner.github.io/2020/04/27/suan-fa/jian-zhi-offer/16.lian-biao-zhong-dao-shu-di-k-ge-jie-dian/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《【剑指Offer】16. 链表中倒数第k个节点》 — 紫依卓兰&url=https://eriecorner.github.io/2020/04/27/suan-fa/jian-zhi-offer/16.lian-biao-zhong-dao-shu-di-k-ge-jie-dian/&via=https://eriecorner.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://eriecorner.github.io/2020/04/27/suan-fa/jian-zhi-offer/16.lian-biao-zhong-dao-shu-di-k-ge-jie-dian/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD50lEQVR42u3awVLjQAwEUP7/p3evUMFxtzQGDs+nVBLimReqOtLo4yO+/n26kldfH1+9+vqe12u2wvxv6wsHDhw4cMQfdLWUZHHvt/H++atnWsrkmRtuHDhw4MBxiONqe3loJVtN4GaR3yJePo8DBw4cOH6coy3nknvlG2sDGAcOHDhw/H2Offn0RKxu1o8DBw4cOJ7gSJqDs+ItCexZuCa7eLBXigMHDhw4JklXb+9vPj584cCBAweOoEBKrjwI8yZgPuiQF43D3eHAgQMHjjVHexR0bBztUHOw2GT++Thw4MCBY8Gxh9hvNWkvzgK7bnTiwIEDB441x+zGe9a8OEyYZmN8l3fBgQMHDhxrjrwZl9ys3di+NdkO0kV8OHDgwIFjwdFueDb6Nltocpf21ej/AgcOHDhwjDhO3X7W/mtbe7OvoRjLwIEDBw4chzjywmkTnLNgzlt+s/GLL49x4MCBA8chjnZ8oR0dmEHnsd0OVVx+SThw4MCB4xDHqWOkdkFtYdZy18UnDhw4cOBYc8wOctom4P6wKsdtC7z6FA4HDhw4cKQ7Gk7YRcc5wUBeXqrtBy+K/xEcOHDgwFFyzAKyPc5pD59uIvDQcdc378SBAwcOHGuOzbHNc63DfXNw9sk4cODAgeMJjk3bbha3bRGYV6UtEw4cOHDg2HMkH7dpFM7Kqrydtx+t+6Y5iAMHDhw4Fhyz3JktpQ3aTay2oxg4cODAgeMURxJvp662sjw7Thfh4sCBAweOQxztlSylXfRsq0lRVxyP4cCBAweOQxxtqy658awNlxdv7dFUtHIcOHDgwHGIYxOxmzG7R7a0OBjDgQMHDhx7jjYOZ0c+m+ItKcDaNuLNl4EDBw4cOBYc+wG1WdNwMwb3fmMtAQ4cOHDgeI5jc8zTNhbblmK7vXZtN71SHDhw4MARc2wWlJdwdeCV95r9aLh8Jw4cOHDgWHAkZVLba5zRtIdhLWLEigMHDhw41hyz+Gxjrx1ZaEfr2nferAoHDhw4cCw4Nq20zTHPfhBh/4PgsoTDgQMHDhxrjtkhU15otYtLwjgpBfPYxoEDBw4cpzhmZdgmjGfbTraR3+smsHHgwIEDx4JjFpzt8+1xVN5kPBztOHDgwIHjfJVUh9Ms6vKSbNbsa38o1Fg4cODAgePtmtuhtHZALRmYOBXMbdAWYw04cODAgaPk2ARhu6VNYXmqSLv8Wxw4cODA8UsceazOir08JnO+aMQBBw4cOHD8OEcbcu2yZqG+bxHiwIEDB46zHPkQQxKWp5qM+eck7zx87IQDBw4cONYDDVEJFC9iFpCzEq79YnDgwIEDx4jjP0tPUyVbJCZRAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
